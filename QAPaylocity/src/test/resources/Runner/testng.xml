@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="QA Paylocity Challenge">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="Listeners.CustomListeners" />
+	</listeners>
+
+
+	<test name="Log in Test">
+		<classes>
+			<class name="Testcases.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+		<test name="Add Employee Test">
+		<classes>
+			<class name="Testcases.AddEmployeeTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+		<test name="Edit Employee Test">
+		<classes>
+			<class name="Testcases.EditEmployeeTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+		<test name="Delete Employee Test">
+		<classes>
+			<class name="Testcases.DeleteEmployeeTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+
+</suite> <!-- Suite -->
